@@ -1,0 +1,8 @@
+{
+  "C_Cpp.intelliSenseEngine": "Tag Parser",
+  "files.associations": {
+    "chrono": "c",
+    "algorithm": "c"
+  },
+  "idf.portWin": "COM5"
+}
