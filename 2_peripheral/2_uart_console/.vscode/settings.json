@@ -1,0 +1,12 @@
+{
+  "C_Cpp.intelliSenseEngine": "Tag Parser",
+  "files.associations": {
+    "chrono": "c",
+    "algorithm": "c",
+    "esp_console.h": "c",
+    "esp_log.h": "c",
+    "bsp_wrapper.h": "c"
+  },
+  "idf.portWin": "COM5",
+  "idf.adapterTargetName": "esp32"
+}
