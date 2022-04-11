@@ -6,3 +6,7 @@
 ## 2022/04/08
 
 - [PERIPHERAL] [ADD]  ① 增加UART console工程 ② 增加UART select工程
+
+## 2022/04/11
+
+- [GUI LVGL] [ADD]  增加LVGL 8.2的移植部分
