@@ -11,3 +11,7 @@
 
 - [GUI LVGL] [ADD]  增加LVGL 8.2的移植部分
 - [BASE] [ADD]  增加system log的工程
+
+## 2022/04/12
+
+- [GUI LVGL] [ADD]  修改LVGL 8.2的移植工程，目前可以正常跑起来

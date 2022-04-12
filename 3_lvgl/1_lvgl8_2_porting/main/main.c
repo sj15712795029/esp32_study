@@ -112,6 +112,7 @@ static void guiTask(void *pvParameter)
     disp_drv.draw_buf = &disp_buf;
     disp_drv.hor_res = LV_HOR_RES_MAX;
     disp_drv.ver_res = LV_VER_RES_MAX;
+
     lv_disp_drv_register(&disp_drv);
 
     /* Register an input device when enabled on the menuconfig */
@@ -155,6 +156,7 @@ static void guiTask(void *pvParameter)
 #endif
     vTaskDelete(NULL);
 }
+
 
 static void create_demo_application(void)
 {
