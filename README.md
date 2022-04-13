@@ -14,4 +14,5 @@
 |                | 2_uart_console        | ESP32 UART console工程                      |
 |                | 3_uart_select         | ESP32 UART select工程                       |
 | 3_lvgl         | 1_lvgl8_2_porting     | LVGL 8.2的移植                              |
+|                | 2_lvgl8_0_porting     | LVGL 8.0的移植                              |
 
