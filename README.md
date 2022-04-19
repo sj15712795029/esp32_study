@@ -16,4 +16,5 @@
 | 3_lvgl         | 1_lvgl8_2_porting     | LVGL 8.2的移植                              |
 |                | 2_lvgl8_0_porting     | LVGL 8.0的移植                              |
 |                | 3_lvgl7_10_porting    | LVGL 7.10的移植                             |
+| 4_bluetooth    | 1_vhci_ble_adv        | vhci架构实现ble广播                         |
 
