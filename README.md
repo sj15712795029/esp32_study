@@ -18,4 +18,7 @@
 |                | 3_lvgl7_10_porting    | LVGL 7.10的移植                             |
 | 4_bluetooth    | 1_vhci_ble_adv        | vhci架构实现ble广播                         |
 |                | 2_vhci_ble_scan       | vchi架构实现ble搜索                         |
+| 5_wifi         |                       |                                             |
+| 6_freeRTOS     | 1_msg_queue           | 消息队列的使用                              |
+| 7_demo         |                       |                                             |
 

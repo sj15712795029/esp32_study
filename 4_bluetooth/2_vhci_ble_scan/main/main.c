@@ -128,64 +128,6 @@ static void hci_cmd_send_ble_scan_start(void)
     ESP_LOGI(TAG, "BLE Scanning started..");
 }
 
-static void hci_cmd_send_ble_adv_start(void)
-{
-    uint16_t sz = make_cmd_ble_set_adv_enable (hci_cmd_buf, 1);
-    esp_vhci_host_send_packet(hci_cmd_buf, sz);
-    ESP_LOGI(TAG, "BLE Advertising started..");
-}
-
-static void hci_cmd_send_ble_set_adv_param(void)
-{
-    /* Minimum and maximum Advertising interval are set in terms of slots. Each slot is of 625 microseconds. */
-    uint16_t adv_intv_min = 0x100;
-    uint16_t adv_intv_max = 0x100;
-
-    /* Connectable undirected advertising (ADV_IND). */
-    uint8_t adv_type = 0;
-
-    /* Own address is public address. */
-    uint8_t own_addr_type = 0;
-
-    /* Public Device Address */
-    uint8_t peer_addr_type = 0;
-    uint8_t peer_addr[6] = {0x80, 0x81, 0x82, 0x83, 0x84, 0x85};
-
-    /* Channel 37, 38 and 39 for advertising. */
-    uint8_t adv_chn_map = 0x07;
-
-    /* Process scan and connection requests from all devices (i.e., the White List is not in use). */
-    uint8_t adv_filter_policy = 0;
-
-    uint16_t sz = make_cmd_ble_set_adv_param(hci_cmd_buf,
-                  adv_intv_min,
-                  adv_intv_max,
-                  adv_type,
-                  own_addr_type,
-                  peer_addr_type,
-                  peer_addr,
-                  adv_chn_map,
-                  adv_filter_policy);
-    esp_vhci_host_send_packet(hci_cmd_buf, sz);
-}
-
-static void hci_cmd_send_ble_set_adv_data(void)
-{
-    char *adv_name = "ESP-BLE-1";
-    uint8_t name_len = (uint8_t)strlen(adv_name);
-    uint8_t adv_data[31] = {0x02, 0x01, 0x06, 0x0, 0x09};
-    uint8_t adv_data_len;
-
-    adv_data[3] = name_len + 1;
-    for (int i = 0; i < name_len; i++) {
-        adv_data[5 + i] = (uint8_t)adv_name[i];
-    }
-    adv_data_len = 5 + name_len;
-
-    uint16_t sz = make_cmd_ble_set_adv_data(hci_cmd_buf, adv_data_len, (uint8_t *)adv_data);
-    esp_vhci_host_send_packet(hci_cmd_buf, sz);
-    ESP_LOGI(TAG, "Starting BLE advertising with name \"%s\"", adv_name);
-}
 
 static esp_err_t get_local_name (uint8_t *data_msg, uint8_t data_len, ble_scan_local_name_t *scanned_packet)
 {
@@ -212,7 +154,7 @@ static esp_err_t get_local_name (uint8_t *data_msg, uint8_t data_len, ble_scan_l
     return ESP_FAIL;
 }
 
-void hci_evt_process(void *pvParameters)
+void hci_evt_process(void *pvParameters)  -
 {
     host_rcv_data_t *rcv_data = (host_rcv_data_t *)malloc(sizeof(host_rcv_data_t));
     if (rcv_data == NULL) {
@@ -428,14 +370,9 @@ void app_main(void)
             case 0: hci_cmd_send_reset(); ++cmd_cnt; break;
             case 1: hci_cmd_send_set_evt_mask(); ++cmd_cnt; break;
 
-            /* Send advertising commands. */
-            case 2: hci_cmd_send_ble_set_adv_param(); ++cmd_cnt; break;
-            case 3: hci_cmd_send_ble_set_adv_data(); ++cmd_cnt; break;
-            case 4: hci_cmd_send_ble_adv_start(); ++cmd_cnt; break;
-
             /* Send scan commands. */
-            case 5: hci_cmd_send_ble_scan_params(); ++cmd_cnt; break;
-            case 6: hci_cmd_send_ble_scan_start(); ++cmd_cnt; break;
+            case 2: hci_cmd_send_ble_scan_params(); ++cmd_cnt; break;
+            case 3: hci_cmd_send_ble_scan_start(); ++cmd_cnt; break;
             default: continue_commands = 0; break;
             }
             ESP_LOGI(TAG, "BLE Advertise, cmd_sent: %d", cmd_cnt);

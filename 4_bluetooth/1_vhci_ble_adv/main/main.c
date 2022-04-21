@@ -44,19 +44,13 @@ enum {
     H4_TYPE_EVENT   = 4
 };
 
-/*
- * @brief: BT controller callback function, used to notify the upper layer that
- *         controller is ready to receive command
- */
+
 static void controller_rcv_pkt_ready(void)
 {
     printf("controller rcv pkt ready\n");
 }
 
-/*
- * @brief: BT controller callback function, to transfer data packet to upper
- *         controller is ready to receive command
- */
+
 static int host_rcv_pkt(uint8_t *data, uint16_t len)
 {
     printf("host rcv pkt: ");

@@ -1,0 +1,12 @@
+{
+  "C_Cpp.intelliSenseEngine": "Tag Parser",
+  "idf.adapterTargetName": "esp32",
+  "idf.portWin": "COM5",
+  "files.associations": {
+    "task.h": "c",
+    "esp_bt.h": "c",
+    "queue.h": "c",
+    "*.inc": "c",
+    "stdint.h": "c"
+  }
+}
