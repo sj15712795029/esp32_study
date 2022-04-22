@@ -32,3 +32,7 @@
 ## 2022/04/21
 
 - [RTOS] [ADD]  增加FreeRTOS消息队列的使用
+
+## 2022/04/22
+
+- [BT] [ADD]  增加VHCI架构实现传统蓝牙的scan mode
