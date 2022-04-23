@@ -19,7 +19,7 @@
 | 4_bluetooth    | 1_vhci_ble_adv             | vhci架构实现ble广播                         |
 |                | 2_vhci_ble_scan            | vchi架构实现ble搜索                         |
 |                | 3_vhci_classical_scan_mode | vhci架构的传统蓝牙scan mode                 |
-| 5_wifi         |                            |                                             |
+| 5_wifi         | 1_station                  | wfi station连接热点的基础工程               |
 | 6_freeRTOS     | 1_msg_queue                | 消息队列的使用                              |
 | 7_demo         |                            |                                             |
 

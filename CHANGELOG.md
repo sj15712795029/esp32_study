@@ -36,3 +36,7 @@
 ## 2022/04/22
 
 - [BT] [ADD]  增加VHCI架构实现传统蓝牙的scan mode
+
+## 2022/04/23
+
+- [WIFI] [ADD]  增加wifi station角色的基础工程

@@ -10,4 +10,5 @@
 4_bluetooth/1_vhci_ble_adv/build/*
 4_bluetooth/2_vhci_ble_scan/build/*
 4_bluetooth/3_vhci_classical_scan_mode/build/*
+5_wifi/1_station/build/*
 6_freeRTOS/1_msg_queue/build/*
