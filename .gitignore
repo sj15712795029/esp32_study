@@ -12,3 +12,4 @@
 4_bluetooth/3_vhci_classical_scan_mode/build/*
 5_wifi/1_station/build/*
 6_freeRTOS/1_msg_queue/build/*
+6_freeRTOS/2_event_group/build/*

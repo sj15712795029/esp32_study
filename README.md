@@ -21,5 +21,6 @@
 |                | 3_vhci_classical_scan_mode | vhci架构的传统蓝牙scan mode                 |
 | 5_wifi         | 1_station                  | wfi station连接热点的基础工程               |
 | 6_freeRTOS     | 1_msg_queue                | 消息队列的使用                              |
+|                | 2_event_group              | 事件组的使用                                |
 | 7_demo         |                            |                                             |
 

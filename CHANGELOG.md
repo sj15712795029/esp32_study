@@ -40,3 +40,4 @@
 ## 2022/04/23
 
 - [WIFI] [ADD]  增加wifi station角色的基础工程
+- [RTOS] [ADD]  增加FreeRTOS事件组的使用
