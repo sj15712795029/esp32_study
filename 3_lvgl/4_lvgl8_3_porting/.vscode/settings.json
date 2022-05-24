@@ -9,7 +9,8 @@
     "lv_demo_music.h": "c",
     "lv_demo_widgets.h": "c",
     "disp_spi.h": "c",
-    "lv_examples.h": "c"
+    "lv_examples.h": "c",
+    "buttons_isr.h": "c"
   },
   "idf.flashType": "UART"
 }

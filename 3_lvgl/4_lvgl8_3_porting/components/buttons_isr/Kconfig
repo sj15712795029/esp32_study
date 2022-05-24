@@ -1,0 +1,31 @@
+menu "BUTTON ISR"
+    config BUTTON_BLINK_GPIO
+        int "PIN FOR LED"
+        default 4
+        range 1 48
+        help
+            Define pin for blinking
+
+    config BUTTON_GPIO_1
+        int "Buttons 1"
+        default 0
+        range 0 48
+        help
+            Define pin for first button
+            
+
+    config BUTTON_GPIO_2
+        int "Buttons 2"
+        default 35
+        range 0 48
+        help
+            Define pin for first button
+
+
+    config BUTTON_RUNTASK_SCANBUTTONS
+        bool "Run Task for Scan Buttons"
+        default y
+        help
+            Run Task for Read Queus interrupted
+                
+endmenu

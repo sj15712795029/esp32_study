@@ -36,6 +36,7 @@
 
 #include "lvgl_helpers.h"
 
+#include "buttons_isr.h"
 
 
 
@@ -79,6 +80,7 @@ static void guiTask(void *pvParameter)
     (void)pvParameter;
     xGuiSemaphore = xSemaphoreCreateMutex();
 
+    set_buttons_isr();
     lv_init();
 
     /* Initialize SPI or I2C bus used by the drivers */
