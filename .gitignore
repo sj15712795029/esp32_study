@@ -7,6 +7,7 @@
 3_lvgl/1_lvgl8_2_porting/build/*
 3_lvgl/2_lvgl8_0_porting/build/*
 3_lvgl/3_lvgl7_10_porting/build/*
+3_lvgl/4_lvgl8_3_porting/build/*
 4_bluetooth/1_vhci_ble_adv/build/*
 4_bluetooth/2_vhci_ble_scan/build/*
 4_bluetooth/3_vhci_classical_scan_mode/build/*
