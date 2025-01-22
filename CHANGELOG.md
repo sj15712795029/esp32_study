@@ -49,3 +49,7 @@
 ## 2025/01/11
 
 - [BT] [ADD]  增加ESP32作为蓝牙controller的工程
+
+## 2025/01/22
+
+- [BT] [ADD]  增加ESP32 BLE Mesh onoff模型server demo

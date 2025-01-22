@@ -1,0 +1,11 @@
+{
+    "C_Cpp.intelliSenseEngine": "default",
+    "idf.espIdfPathWin": "C:\\Users\\Zhongjun.Yu\\esp\\v5.3.2\\esp-idf",
+    "idf.toolsPathWin": "C:\\Users\\Zhongjun.Yu\\.espressif",
+    "idf.flashType": "UART",
+    "idf.portWin": "COM19",
+    "files.associations": {
+        "gpio.h": "c",
+        "board.h": "c"
+    }
+}
