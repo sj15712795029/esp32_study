@@ -53,3 +53,4 @@
 ## 2025/01/22
 
 - [BT] [ADD]  增加ESP32 BLE Mesh onoff模型server demo
+- [BT] [ADD]  增加README中ble mesh的部分

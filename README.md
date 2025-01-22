@@ -20,6 +20,7 @@
 |                | 2_vhci_ble_scan             | vchi架构实现ble搜索                         |
 |                | 3_vhci_classical_scan_mode  | vhci架构的传统蓝牙scan mode                 |
 |                | 4_controller_hci_uart_esp32 | ESP32作为蓝牙controller的工程               |
+|                | 5_ble_mesh_onoff_server     | ESP32 BLE mesh onoff模型server              |
 | 5_wifi         | 1_station                   | wifi station连接热点的基础工程              |
 |                | 2_ap                        | wifi ap创建热点的基础工程                   |
 | 6_freeRTOS     | 1_msg_queue                 | 消息队列的使用                              |
