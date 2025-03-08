@@ -13,6 +13,7 @@
 | 2_peripheral   | 1_led                       | ESP32 GPIO控制LED                           |
 |                | 2_uart_console              | ESP32 UART console工程                      |
 |                | 3_uart_select               | ESP32 UART select工程                       |
+|                | 4_pc_control_led            | 上位机控制ESP32 LED工程                     |
 | 3_lvgl         | 1_lvgl8_2_porting           | LVGL 8.2的移植                              |
 |                | 2_lvgl8_0_porting           | LVGL 8.0的移植                              |
 |                | 3_lvgl7_10_porting          | LVGL 7.10的移植                             |

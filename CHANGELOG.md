@@ -54,3 +54,7 @@
 
 - [BT] [ADD]  增加ESP32 BLE Mesh onoff模型server demo
 - [BT] [ADD]  增加README中ble mesh的部分
+
+## 2025/03/08
+
+- [PERIPHERAL] [ADD]  增加上位机通过uart控制ESP32 LED灯的工程
